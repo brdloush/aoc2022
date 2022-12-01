@@ -4,4 +4,6 @@
  :aliases
  {:test {:extra-paths ["test"]
          :extra-deps {org.clojure/test.check {:mvn/version "1.1.1"}}}
+  :kaocha {:main-opts ["-m" "kaocha.runner"]
+           :extra-deps {lambdaisland/kaocha {:mvn/version "1.71.1119"}}}
   :neil {:project {:name aoc2022/aoc2022}}}}
